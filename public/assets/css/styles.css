@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'Now';
+    src: url('../../Fonts/Now-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Now';
+    src: url('../../Fonts/Now-Thin.otf') format('opentype');
+    font-weight: medium;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Now';
+    src: url('../../Fonts/Now-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Now';
+    src: url('../../Fonts/Now-Thin.otf') format('opentype');
+    font-weight: thin;
+    font-style: normal;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #a6a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  li {
+    position: relative;
+    padding-left: 0.5em;
+    margin-bottom: 4px;
+    line-height: 1.5;
+  }
+  li:before {
+    content: "●";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    color: black;
+    font-size: 0.5em;
+  }
+  .list-container {
+    margin: 8px 0px 0px 0px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'sidebar main'
+      'sidebar main';
+    gap: 10px;
+    background-color: #FFFFFF;
+    padding: 100px 50px;
+    margin: 0 24%;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .sidebar {
+    grid-area: sidebar;
+    margin-right: 60px;
+  }
+  .main {
+    grid-area: main;
+  }
+  .image-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  .image-photos {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 60px;
+  }
+  .separator {
+    border-top: 1.9px solid #ccc;
+    width: 100%;
+  }
+
+/* Sidebar */
+  .contact-text {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: #464A4E;
+    font-size: 14px;
+    font-family: 'Now', Arial, sans-serif;
+    margin: 0px 0px 16px 0px;
+  }
+  .education-title-text{
+    text-align: left;
+    color: #4A454B;
+    font-size: 26px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 50px 0px 0px 0px;
+  }
+  .education-graduate-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 20px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+  }
+  .education-vocational-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 16px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+  }
+  .education-years-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 14px;
+    font-family: 'Now', Arial, sans-serif;
+    margin: 0px;
+  }
+  .expertise-title-text {
+    text-align: left;
+    color: #4A454B;
+    font-size: 26px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 50px 0px 0px 0px;
+  }
+  .expertise-list-text {
+    font-size: 18px;
+    text-align: left;
+    color: #464A4E;
+    font-family: 'Now', Arial, sans-serif;
+    margin: 20px 0px 0px 0px;
+  }
+
+/* Main */
+  .name-text {
+    text-align: left;
+    color: #4A454B;
+    font-size: 34px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 40px 0px 20px 0px;
+  }
+  .role-text {
+    text-align: left;
+    color: #737373;
+    font-size: 26px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: thin;
+    margin: 0px;
+    letter-spacing: 4px; 
+    margin-bottom: 16px;   
+  }
+  .about-me-title-text {
+    text-align: left;
+    color: #4A454B;
+    font-size: 26px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 80px 0px 0px 0px;
+  }
+  .about-me-text {
+    color: #464A4E;
+    font-size: 14px;
+    font-family: 'Now', Arial, sans-serif;
+    margin: 20px 0px 0px 0px;
+    text-align: justify;
+  }
+  .work-experience-title-text {
+    text-align: left;
+    color: #4A454B;
+    font-size: 26px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 40px 0px 0px 0px;
+  }
+  .work-experience-container-role {
+    margin-top: 20px;
+  }
+  .work-experience-se-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 20px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 8px 0px 0px 0px;
+  }
+  .work-experience-md-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 20px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: bold;
+    margin: 8px 0px 8px 0px;
+  }
+  .work-experience-list-text {
+    text-align: left;
+    color: #464A4E;
+    font-size: 14px;
+    font-family: 'Now', Arial, sans-serif;
+    margin: 0px;
+    text-align: justify;
+  }
+  .work-experience-years-location-title-text {
+    text-align: left;
+    color: #737373;
+    font-size: 16px;
+    font-family: 'Now', Arial, sans-serif;
+    font-weight: thin;
+    margin: 0px;
+  }
+  
